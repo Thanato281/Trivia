@@ -1,0 +1,127 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 100%;
+    height: 100vh;
+    background-image: radial-gradient(
+        circle 830px at 95.6% -5%,
+        rgb(180, 223, 27) 0%,
+        rgb(17, 107, 29) 90%
+    );
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+form {
+    width: 40%;
+    background-color: white;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 15px;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+  -webkit-box-shadow: 10px 10px 15px -5px rgba(0, 0, 0, 0.62);
+  -moz-box-shadow: 10px 10px 15px -5px rgba(0, 0, 0, 0.62);
+  box-shadow: 10px 10px 15px -5px rgba(0, 0, 0, 0.62);
+
+}
+
+h2 {
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.question-field {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    margin-bottom: 25px;
+}
+
+select, input.amount {
+    margin-top: 10px;
+    background-color: transparent;
+    outline: none;
+    padding: 7px;
+    border: none;
+    border-bottom: 2px solid olive;
+}
+
+input[type="submit"] {
+    width: 90%;
+    background-color: rgb(17, 107, 29);
+    padding: 10px;
+    border: none;
+    color: white;
+    transition: all 1s ease;
+    cursor: pointer;
+    -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: white;
+    color: rgb(17, 107, 29);
+}
+
+/* Pregunta */
+
+.content {
+    width: 50%;
+    background-color: olive;
+    margin: auto;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 15px;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    -webkit-box-shadow: 10px 10px 15px -5px rgba(0, 0, 0, 0.62);
+    -moz-box-shadow: 10px 10px 15px -5px rgba(0, 0, 0, 0.62);
+    box-shadow: 10px 10px 15px -5px rgba(0, 0, 0, 0.62);
+}
+
+.question-items {
+    width: 80%;
+    margin: auto;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.question-items button {
+    width: 48%;
+    margin-top: 10px;
+    padding: 10px;
+    border: none;
+    background-color: white;
+    color: black;
+    border-radius: 15px;
+    -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+

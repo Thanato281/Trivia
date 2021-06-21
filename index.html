@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trivial</title>
+    <link rel="stylesheet" href="trivia.css">
+</head>
+<body>
+    <form action="" id="trivia">
+        <h2>LA TRIVIA</h2>
+        <div class="question-field">
+            <label for="amount"> Preguntas Deseadas</label>
+            <input type="number" id="amount" min="0" class="amount" value="5">
+        </div>
+        
+        <div class="question-field">
+            <label for="categoria"> Categoria: </label>
+            <select name="" id="categoria">
+                <option value="0">Cualquier categoria</option>
+                <option value="9">Cultura general</option>
+                <option value="10">Libros</option>
+                <option value="11">Peliculas</option>
+                <option value="12">Musica</option>
+                <option value="13">Musicales y teatros</option>
+                <option value="14">Television</option>
+                <option value="15">Video juegos</option>
+                <option value="16">Juegos de mesa</option>
+                <option value="17">Ciencia y naturaleza</option>
+                <option value="18">Computacion</option>
+                <option value="19">Matematicas</option>
+                <option value="20">Mitologia</option>
+                <option value="21">Deportes</option>
+                <option value="22">Geografias</option>
+                <option value="23">Historia</option>
+                <option value="24">Politica</option>
+                <option value="25">Arte</option>
+                <option value="26">Celebridades</option>
+                <option value="27">Animales</option>
+                <option value="28">Autos</option>
+                <option value="29">Comics</option>
+                <option value="30">Gargets</option>
+                <option value="31">Anime y mangas</option>
+                <option value="32">Caricaturas</option>
+            </select>
+        </div>
+
+        <div class="question-field">
+            <label for="dificultad">Dificultad</label>
+            <select name="" id="dificultad">
+                <option value="0">Cualquier dificultad</option>
+                <option value="easy">Facil</option>
+                <option value="medium">Media</option>
+                <option value="hard">Dificil</option>
+            </select>
+        </div>
+
+        <div class="question-field">
+            <label for="type">Tipo de pregunta:</label>
+            <select name="" id="type">
+                <option value="0">Cualquier Tipo</option>
+                <option value="multiple">Opcion Multiple</option>
+                <option value="boolean">Verdadero / falso</option>
+            </select>
+        </div>
+        <input type="submit" value="Comenzar">
+    </form>
+    <div class="content" id="questionsContent">
+        <p id="questionName"></p>
+        <div class="question-items">
+            <button id="1" type="button">Ans 1</button>
+            <button id="2" type="button">Ans 2</button>
+            <button id="3" type="button">Ans 3</button>
+            <button id="4" type="button">Ans 4</button>
+        </div>
+        <p>
+            <span id="question_index"></span>
+            <span id="num_questions"> </span>
+        </p>
+    </div>
+
+    <script src="trivia.js"></script>
+</body>
+</html>
